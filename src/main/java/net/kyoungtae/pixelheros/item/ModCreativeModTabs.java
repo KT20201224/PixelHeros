@@ -22,6 +22,17 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RAW_TOPAZ.get());
                         pOutput.accept(ModBlocks.TOPAZ_BLOCK.get());
                         pOutput.accept(ModBlocks.TOPAZ_ORE.get());
+
+                        pOutput.accept(ModItems.STRAWBERRY.get());
+
+                        pOutput.accept(ModItems.RECALL_SCROLL.get());
+
+                        pOutput.accept(ModItems.PINE_CONE.get());
+
+                        pOutput.accept(ModItems.TOPAZ_HELMET.get());
+                        pOutput.accept(ModItems.TOPAZ_CHESTPLATE.get());
+                        pOutput.accept(ModItems.TOPAZ_LEGGINGS.get());
+                        pOutput.accept(ModItems.TOPAZ_BOOTS.get());
                     })
                     .build()
     );

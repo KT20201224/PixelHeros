@@ -2,10 +2,12 @@ package net.kyoungtae.pixelheros.block;
 
 import net.kyoungtae.pixelheros.PixelHeros;
 import net.kyoungtae.pixelheros.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -21,8 +23,10 @@ public class ModBlocks {
     // 블록 등록
     public static final RegistryObject<Block> TOPAZ_BLOCK = registerBlock("topaz_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    // 경험치를 드랍하는 블록
     public static final RegistryObject<Block> TOPAZ_ORE = registerBlock("topaz_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+                    .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(10,30)));
 
 
 

@@ -1,6 +1,9 @@
 {
   "item.pixelheros.topaz": "Topaz",
   "item.pixelheros.raw_topaz": "Raw Topaz",
+  "item.pixelheros.strawberry": "Strawberry",
+  "item.pixelheros.recall_scroll": "Recall Scroll",
+  "item.pixelheros.pine_cone": "Pine Cone",
 
   "block.pixelheros.topaz_block": "Topaz Block",
   "block.pixelheros.topaz_ore": "Topaz Ore",
