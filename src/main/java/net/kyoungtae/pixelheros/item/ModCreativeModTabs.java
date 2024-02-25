@@ -25,6 +25,7 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.STRAWBERRY.get());
 
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.RECALL_SCROLL.get());
 
                         pOutput.accept(ModItems.PINE_CONE.get());

@@ -2,6 +2,7 @@ package net.kyoungtae.pixelheros.item;
 
 import net.kyoungtae.pixelheros.PixelHeros;
 import net.kyoungtae.pixelheros.item.custom.FuelItem;
+import net.kyoungtae.pixelheros.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,6 +23,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RECALL_SCROLL = ITEMS.register("recall_scroll",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(10)));
 
     // 방어구
     public static final RegistryObject<Item> TOPAZ_HELMET = ITEMS.register("topaz_helmet",
